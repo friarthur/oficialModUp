@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Estilos do Header */
+.header {
+    background: #3b5998; /* Cor de fundo da navbar */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Ajuste de altura da logo */
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #8b9dc3; /* Cor de fundo do hover */
+    border-radius: 20px; /* Bordas arredondadas no hover */
+}
+
+/* Estilos da Seção Sobre Nós */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: #666;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: #3b5998;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos da Seção de Qualidades */
+.qualities-section {
+    background-color: #fff; /* Cor de fundo clara */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.qualities-section h2 {
+    font-size: 2em;
+    color: #3b5998; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+.qualities-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.qualities-section li {
+    background: #f9f9f9; /* Cor de fundo dos itens da lista */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qualities-section li strong {
+    color: #3b5998; /* Cor do texto em negrito */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: #fafafa; /* Cor de fundo do rodapé */
+    color: #141414;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0e0d0d; /* Cor dos links sociais */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    color: rgb(23, 102, 248); 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .about-section, .team-section {
+        padding: 20px 10px;
+    }
+
+    .about-section h2, .team-section h2 {
+        font-size: 28px;
+    }
+
+    .about-section p, .team-section p {
+        font-size: 16px;
+    }
+
+    .about-cards, .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .about-section, .team-section {
+        padding: 15px;
+    }
+
+    .about-section h2, .team-section h2 {
+        font-size: 24px;
+    }
+
+    .about-section p, .team-section p {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}

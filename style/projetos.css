@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.nav-links a:hover {
+    background-color: #8b9dc3; 
+    color: #1f1e1e;
+}
+
+.projects {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.projects p {
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #fcfafd;
+    color: #050505;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #0a0a0a;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    color: rgb(23, 102, 248);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links{
+      display: flex;
+      
+    }
+    .logo img {
+        height: 40px;
+    }
+
+    .projects h2 {
+        font-size: 1.5em;
+    }
+
+    .projects p {
+        font-size: 0.9em;
+    }
+}

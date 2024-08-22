@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod-Up tecnologia - Soluções em site</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="/src/iconslogo.png " type="image/png">
+    <link rel="icon" href="https://www.InovaTech/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Navbar separada -->
+    <nav class="navbar">
+        <div class="logo"><img src="/src/logooficial.jpg" alt="SoftTec Logo" height="50"></div>
+        <ul class="nav-links">
+            <li><a href="#contact">Home</a></li>
+            <li><a href="/html/sobre.html">Sobre</a></li>
+            <li><a href="/html/projetos.html">Projetos</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Header separado -->
+    <header class="header">
+        <div class="hero">
+            <h1>Desenvolvendo Experiências Digitais Únicas</h1>
+            <p>Transforme suas ideias em realidade com nossos serviços de desenvolvimento de Websites.</p>
+            <a href="#projects" class="btn">Conheça Nossos Projetos</a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2>Sobre a ModUp tecnologia </h2>
+        <p>Bem-vindo à Mod-Up tecnologia! Somos uma equipe dedicada de 8 profissionais, liderada por Arthur Reis, com o objetivo
+            de ajudar empresas e empreendedores a impulsionarem seus negócios por meio de soluções tecnológicas sob
+            medida. Na Mod-Up, estamos comprometidos em entregar projetos de alta qualidade que atendam às
+            necessidades exclusivas de cada cliente. Com experiência em diversas tecnologias e metodologias ágeis,
+            garantimos que cada projeto seja eficiente, eficaz e alinhado às expectativas de nossos clientes.
+            Trabalhamos juntos para transformar ideias em realidade, oferecendo um serviço personalizado e inovador.
+
+        </p>
+        <div class="about-cards">
+            <div class="card">
+                <h3>Nossa Missão</h3>
+                <p>Fornecer soluções inovadoras e personalizadas que impulsionem o sucesso dos nossos clientes.</p>
+            </div>
+            <div class="card">
+                <h3>Nosso Time</h3>
+                <p>Contamos com uma equipe de 8 profissionais altamente qualificados e apaixonados por tecnologia.</p>
+            </div>
+            <div class="card">
+                <h3>Nossos Valores</h3>
+                <p>Inovação, qualidade, integridade e compromisso com o cliente são os pilares que sustentam nossa
+                    empresa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Nossos Projetos</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="/src/pageV.png" alt="Projeto 1">
+                <h3>Projeto 1: Site de Velas Artesanais</h3>
+                <p>Desenvolvimento de um site elegante e intuitivo para a venda de velas artesanais, focado em
+                    proporcionar uma experiência de compra envolvente e personalizada para os clientes.</p>
+
+            </div>
+            <div class="card">
+                <img src="/src/plans.png" alt="Projeto 2">
+                <h3>Projeto 2: Site Convênio de saúde</h3>
+                O site "Site Convênio de Saúde" oferece uma apresentação clara e funcional de um site destinado à
+                venda e gestão de planos de saúde, destacando a capacidade de controle e eficiência.
+
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
+        </div>
+    </section>
+    <div class="btnP"> <a href="/html/projetos.html"><button>Clique aqui para ver mais projetos</button></a></div>
+    <div class="chatbot">
+        <button class="chatbot-btn" onclick="toggleChat()">💬</button>
+        <div class="chatbox" id="chatbox">
+            <div class="chatbox-header">
+
+                <h4>Pedro</h4>
+                <button class="close-btn" onclick="toggleChat()">✖</button>
+            </div>
+            <div class="chatbox-body" id="chatbox-body">
+                <!-- Mensagens serão inseridas aqui -->
+            </div>
+            <div class="chatbox-footer">
+                <input type="text" id="userInput" placeholder="Digite sua mensagem aqui..."
+                    onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookie-banner" id="cookieBanner">
+       <h3>Política de Cookies</h3> 
+
+       <p> Nós utilizamos cookies para otimizar sua experiência de navegação e para garantir que você tenha a melhor
+        experiência em nosso site. Os cookies são pequenos arquivos de texto armazenados no seu dispositivo que nos
+        permitem reconhecer suas preferências e melhorar continuamente a funcionalidade e a performance do nosso site.</p>
+        <button id="acceptCookies">Aceitar Cookies</button>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 InovaTech. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/arthur-reis-225948234/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/friarthur" target="_blank">GitHub</a> |
+            <a href="https://www.instagram.com/modup_tech/" target="_blank">Instagram</a> |
+            <a href="https://wa.me/+5551983172705" target="_blank">WhatsApp</a> |
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Email</a> |
+            <a href="https://www.youtube.com/@arthurreis8923" target="_blank">YouTube</a> |
+            <a href="https://www.tiktok.com/@moduptech" target="_blank">TikToK</a>
+        </div>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+
+</html>
